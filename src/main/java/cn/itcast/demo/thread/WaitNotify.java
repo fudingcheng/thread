@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 线程间的通信:等待/通知机制
+ * 线程间的通信:等待/通知的经典范式
  * Created by fudingcheng on 2018-11-30.
  */
 public class WaitNotify {
