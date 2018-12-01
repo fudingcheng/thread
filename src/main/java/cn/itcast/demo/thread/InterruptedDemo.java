@@ -4,7 +4,7 @@ import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 中断线程(正在运行线程和休眠线程)
+ * 中断线程正在运行的线程和休眠的线程
  * Created by fudingcheng on 2018-11-29.
  */
 public class InterruptedDemo {
