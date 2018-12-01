@@ -4,6 +4,7 @@ import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 线程的状态
  * Created by fudingcheng on 2018-12-01.
  */
 public class ThreadState {
@@ -48,7 +49,6 @@ public class ThreadState {
             }
         }
     }
-
 
     //线程在Block.class加上锁后,不会释放锁
     static class Blocked implements Runnable{
