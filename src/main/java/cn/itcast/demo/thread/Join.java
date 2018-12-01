@@ -4,7 +4,7 @@ import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 /**
- * join()的使用
+ * 线程join()方法的的使用
  * Created by fudingcheng on 2018-12-01.
  */
 public class Join {
