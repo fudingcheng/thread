@@ -3,7 +3,7 @@ package cn.itcast.demo.thread;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 合理的中断线程
+ * 合理的中断线程的两种方式
  * Created by fudingcheng on 2018-11-29.
  */
 public class Shutdown {
