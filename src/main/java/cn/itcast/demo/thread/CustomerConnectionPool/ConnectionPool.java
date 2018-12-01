@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.util.LinkedList;
 
 /**
- * 简单线程池实现
+ * 使用等待通知机制实现数据库连接池
  * Created by fudingcheng on 2018-11-26.
  */
 public class ConnectionPool {

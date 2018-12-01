@@ -5,7 +5,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * 使用线程间的通信模拟数据库连接池
+ * 测试数据库自定义连接池
+ * 并打印每个线程获得连接的数量信息
  * Created by fudingcheng on 2018-11-26.
  */
 public class ConnectionPoolTest {
