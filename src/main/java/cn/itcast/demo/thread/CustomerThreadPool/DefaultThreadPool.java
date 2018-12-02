@@ -18,7 +18,7 @@ public class DefaultThreadPool implements ThreadPool<Job>{
     private static final int MIN_WORKER_NUMBERS=1;
 
     //工作列表,将会向里面插入工作
-    private final LinkedList<Job> jobs = new LinkedList<Job>();
+    private volatile LinkedList<Job> jobs = new LinkedList<Job>();
 
     //工作者列表
     private final List<Worker> workers = Collections.synchronizedList(new ArrayList<Worker>());
@@ -45,8 +45,8 @@ public class DefaultThreadPool implements ThreadPool<Job>{
         for (int i = 0; i < num; i++) {
             Worker worker = new Worker();
             workers.add(worker);
-            Thread thread = new Thread(worker,"ThreadPool-Worker-"+threadNum);
-            threadNum.incrementAndGet();
+            Thread thread = new Thread(worker,"ThreadPool-Worker-"+threadNum.incrementAndGet());
+
             thread.start();
         }
     }
@@ -117,7 +117,7 @@ public class DefaultThreadPool implements ThreadPool<Job>{
             while(running){
                 Job job = null;
                 synchronized (jobs){
-                    if(jobs.isEmpty()){
+                    while(jobs.isEmpty()){
                         try {
                             jobs.wait();
                         } catch (InterruptedException e) {
@@ -126,7 +126,6 @@ public class DefaultThreadPool implements ThreadPool<Job>{
                             return;
                         }
                     }
-                    
                     //取出一个job
                     job = jobs.removeFirst();
                 }
