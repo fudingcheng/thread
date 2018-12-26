@@ -8,14 +8,14 @@ import com.lmax.disruptor.WorkHandler;
  */
 public class GroupConsumer implements WorkHandler<LongEvent>{
 
-    private String name;
+    private String customerName;
 
-    public GroupConsumer(String name) {
-        this.name = name;
+    public GroupConsumer(String customerName) {
+        this.customerName = customerName;
     }
 
     @Override
     public void onEvent(LongEvent event) throws Exception {
-        System.out.println(name+"消费:"+event.getValue());
+        System.out.println(customerName+"处理:"+event.getValue());
     }
 }

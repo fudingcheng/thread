@@ -1,6 +1,5 @@
 package cn.itcast.demo.thread.DisruptorQueue;
 
-import com.lmax.disruptor.EventTranslator;
 import com.lmax.disruptor.EventTranslatorOneArg;
 
 /**
@@ -8,7 +7,7 @@ import com.lmax.disruptor.EventTranslatorOneArg;
  */
 public class Publish implements EventTranslatorOneArg<LongEvent,String>{
     @Override
-    public void translateTo(LongEvent event, long sequence, String arg0) {
-        event.setValue(Long.parseLong(arg0));
+    public void translateTo(LongEvent event, long sequence, String value) {
+        event.setValue(Long.parseLong(value));
     }
 }
