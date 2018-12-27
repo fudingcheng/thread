@@ -10,15 +10,15 @@ Disruptor的作用与ArrayBlockingQueue有相似之处，都可以实现线程�
 
 吞吐量测试（单位：秒）P:代表生产者  C:代表消费者
 
-![Unicast: 1P – 1C](C:\Users\fudingcheng\Desktop\disruptor\01.png)
+![Unicast: 1P – 1C](.\01.png)
 
-![](C:\Users\fudingcheng\Desktop\disruptor\02.png)
+![](.\02.png)
 
-![](C:\Users\fudingcheng\Desktop\disruptor\03.png)
+![](.\03.png)
 
-![](C:\Users\fudingcheng\Desktop\disruptor\04.png)
+![](.\04.png)
 
-![](C:\Users\fudingcheng\Desktop\disruptor\05.png)
+![](.\05.png)
 
 |                    | Array Blocking Queue | Disruptor  |
 | ------------------ | -------------------- | ---------- |
