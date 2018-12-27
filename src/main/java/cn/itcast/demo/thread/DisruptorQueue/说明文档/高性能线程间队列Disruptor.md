@@ -10,15 +10,15 @@ Disruptor的作用与ArrayBlockingQueue有相似之处，都可以实现线程�
 
 吞吐量测试（单位：秒）P:代表生产者  C:代表消费者
 
-![Unicast: 1P – 1C](.\01.png)
+![Unicast: 1P – 1C](https://github.com/fudingcheng/study/blob/master/src/main/java/cn/itcast/demo/thread/DisruptorQueue/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/01.png?raw=true)
 
-![](.\02.png)
+![](https://github.com/fudingcheng/study/blob/master/src/main/java/cn/itcast/demo/thread/DisruptorQueue/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/02.png?raw=true)
 
-![](.\03.png)
+![](https://github.com/fudingcheng/study/blob/master/src/main/java/cn/itcast/demo/thread/DisruptorQueue/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/03.png?raw=true)
 
-![](.\04.png)
+![](https://github.com/fudingcheng/study/blob/master/src/main/java/cn/itcast/demo/thread/DisruptorQueue/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/04.png?raw=true)
 
-![](.\05.png)
+![](https://github.com/fudingcheng/study/blob/master/src/main/java/cn/itcast/demo/thread/DisruptorQueue/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/05.png?raw=true)
 
 |                    | Array Blocking Queue | Disruptor  |
 | ------------------ | -------------------- | ---------- |
