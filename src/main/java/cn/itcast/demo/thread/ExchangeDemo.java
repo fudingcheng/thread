@@ -11,7 +11,7 @@ import java.util.concurrent.Exchanger;
  *      thread1:[3, 4]
  *      thread2:[1, 2]
  */
-public class ExchangeTest {
+public class ExchangeDemo {
 
 
     public static void main(String[] args) {

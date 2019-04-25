@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  *      pool-1-thread-3到达...
  *      所有线程均已到达，gogogo...
  */
-public class CyclicBarrierTest {
+public class CyclicBarrierDemo {
 
     public static void main(String[] args) throws BrokenBarrierException, InterruptedException {
         int count = 3;  //等待线程的数量
@@ -37,6 +37,7 @@ public class CyclicBarrierTest {
         }
         barrier.await();
         System.out.println("所有线程均已到达，gogogo...");
+        threadPool.shutdown();
     }
 
 }

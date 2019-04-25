@@ -11,7 +11,7 @@ import java.util.concurrent.*;
  *      pool-1-thread-3到达...
  *      所有线程均已到达，gogogo...
  */
-public class CountDownLatchTest {
+public class CountDownLatchDemo {
 
     public static void main(String[] args) {
         int count = 3; //触发事件的线程数量
@@ -32,7 +32,7 @@ public class CountDownLatchTest {
             e.printStackTrace();
         }
         System.out.println("所有线程均已到达，"+Thread.currentThread().getName()+"：gogogo...");
-
+        threadPool.shutdown();
     }
 
 }
